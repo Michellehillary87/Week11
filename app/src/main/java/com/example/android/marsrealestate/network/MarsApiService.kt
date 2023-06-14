@@ -30,8 +30,7 @@ private val retrofit = Retrofit.Builder()
 
 interface MarsApiService {
     @GET("realestate")
-    fun getProperties():
-            Call<List<MarsProperty>>
+    fun getProperties(): List<MarsProperty>
 }
 object MarsApi {
     val retrofitService : MarsApiService by lazy {
